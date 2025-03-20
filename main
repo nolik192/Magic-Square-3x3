@@ -14,13 +14,16 @@ int main() {
     for (int j = 0; j < 3; j++) 
         suma += tab[0][j];
  
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 3; i++)
+    {
         suma_w = suma_k = 0;
-        for (int j = 0; j < 3; j++) {
+        for (int j = 0; j < 3; j++) 
+        {
             suma_w += tab[i][j];  
             suma_k += tab[j][i];  
         }
-        if (suma_w != suma || suma_k != suma) {
+        if (suma_w != suma || suma_k != suma) 
+        {
             cout << "Tablica nie jest kwadratem magicznym" << endl;
             return 0;
         }
